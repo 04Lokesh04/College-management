@@ -22,7 +22,7 @@ const LoginForm=()=>{
         e.preventDefault()
         if (selectOne.faculty===true){
             try{
-                const response= await axios.post("http://127.0.0.1:8000/api/faculty-login/", {
+                const response= await axios.post("https://college-management-3-4o1u.onrender.com/api/faculty-login/", {
                     username,
                     password,
                 })
@@ -39,7 +39,7 @@ const LoginForm=()=>{
 
         else if (selectOne.student===true){
             try{
-                const response= await axios.post("http://127.0.0.1:8000/api/student-login/", {
+                const response= await axios.post("https://college-management-3-4o1u.onrender.com/api/student-login/", {
                     username,
                     password,
                 })

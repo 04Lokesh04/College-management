@@ -28,7 +28,7 @@ const StudentPage=()=>{
     const fetcheStudents=async (StudentToken)=>{
         console.log('student token available')
         try{
-            const response= await axios.get('http://127.0.0.1:8000/api/student-profile/',{
+            const response= await axios.get('https://college-management-3-4o1u.onrender.com/api/student-profile/',{
                 headers:{
                     Authorization:`Bearer ${StudentToken}`
                 }

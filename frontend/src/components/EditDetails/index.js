@@ -17,7 +17,7 @@ const EditDetails = () => {
 
         if (facultyToken) {
             try {
-                const response = await axios.put(`http://127.0.0.1:8000/api/update-student/${id}/`, {}, {
+                const response = await axios.put(`https://college-management-3-4o1u.onrender.com/api/update-student/${id}/`, {}, {
                     headers: {
                         Authorization: `Bearer ${facultyToken}`,
                     },
@@ -30,7 +30,7 @@ const EditDetails = () => {
             }
         } else if (studentToken) {
             try {
-                const response = await axios.put(`http://127.0.0.1:8000/api/update-student-self/${id}/`, {}, {
+                const response = await axios.put(`https://college-management-3-4o1u.onrender.com/api/update-student-self/${id}/`, {}, {
                     headers: {
                         Authorization: `Bearer ${studentToken}`,
                     },
@@ -65,7 +65,7 @@ const EditDetails = () => {
 
         try {
             if (facultyToken) {
-                await axios.put(`http://127.0.0.1:8000/api/update-student/${id}/`, student, {
+                await axios.put(`https://college-management-3-4o1u.onrender.com/api/update-student/${id}/`, student, {
                     headers: {
                         Authorization: `Bearer ${facultyToken}`,
                     },
@@ -73,7 +73,7 @@ const EditDetails = () => {
                 alert("Student details updated successfully!")
                 navigate('/faculty-page')
             } else if (studentToken) {
-                await axios.put(`http://127.0.0.1:8000/api/update-student-self/${id}/`, student, {
+                await axios.put(`https://college-management-3-4o1u.onrender.com/api/update-student-self/${id}/`, student, {
                     headers: {
                         Authorization: `Bearer ${studentToken}`,
                     },

@@ -43,7 +43,7 @@ const FacultyPage=()=>{
 
     const fetcheStudents=async (facultyToken)=>{
         try{
-            const response=await axios.get('http://127.0.0.1:8000/api/view-all-students/', {
+            const response=await axios.get('https://college-management-3-4o1u.onrender.com/api/view-all-students/', {
                 headers:{
                     Authorization: `Bearer ${facultyToken}`
                 }
@@ -81,7 +81,7 @@ const FacultyPage=()=>{
         }
 
         try{
-            const response=await axios.post('http://127.0.0.1:8000/api/create-student/', newStudent, {
+            const response=await axios.post('https://college-management-3-4o1u.onrender.com/api/create-student/', newStudent, {
                 headers:{
                     Authorization: `Bearer ${facultytoken}`
                 }
@@ -121,7 +121,7 @@ const FacultyPage=()=>{
     
         try {
             const response = await axios.post(
-                `http://127.0.0.1:8000/api/add-to-self/${id}/`, 
+                `https://college-management-3-4o1u.onrender.com/api/add-to-self/${id}/`, 
                 {}, 
                 {
                     headers: {
