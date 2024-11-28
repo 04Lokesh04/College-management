@@ -1,0 +1,12 @@
+.form-container{
+    height: 850px;
+    width: 600px;
+}
+
+.label{
+    margin-bottom: 5px;
+}
+
+.table-head{
+    background-color: rgb(51, 111, 79);
+}
