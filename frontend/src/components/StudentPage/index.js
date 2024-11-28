@@ -4,6 +4,7 @@ import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
 import NavBar  from '../NavBar'
 const StudentPage=()=>{
+    // eslint-disable-next-line
     const [user, setUser]=useState()
     const [studentDetails, setStudentDetails]=useState({})
     const navigate=useNavigate()
@@ -23,6 +24,7 @@ const StudentPage=()=>{
         if (storeduser){
             setUser(JSON.parse(storeduser))
         }
+        // eslint-disable-next-line
     }, [])
 
     const fetcheStudents=async (StudentToken)=>{

@@ -1,7 +1,6 @@
 import './index.css'
 import { useState, useEffect, } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { Table } from 'react-bootstrap'
 import NavBar from '../NavBar'
 import axios from "axios"
 
@@ -39,8 +38,9 @@ const FacultyPage=()=>{
         if (storeduser){
             setUser(JSON.parse(storeduser))
         }
+        // eslint-disable-next-line
     }, [])
-
+    // eslint-disable-next-line
     const fetcheStudents=async (facultyToken)=>{
         try{
             const response=await axios.get('https://college-management-3-4o1u.onrender.com/api/view-all-students/', {
@@ -81,6 +81,7 @@ const FacultyPage=()=>{
         }
 
         try{
+            // eslint-disable-next-line
             const response=await axios.post('https://college-management-3-4o1u.onrender.com/api/create-student/', newStudent, {
                 headers:{
                     Authorization: `Bearer ${facultytoken}`
@@ -120,6 +121,7 @@ const FacultyPage=()=>{
         }
     
         try {
+            // eslint-disable-next-line
             const response = await axios.post(
                 `https://college-management-3-4o1u.onrender.com/api/add-to-self/${id}/`, 
                 {}, 
