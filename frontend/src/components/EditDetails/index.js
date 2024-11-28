@@ -44,9 +44,11 @@ const EditDetails = () => {
             navigate("/login")
         }
     }
-
+    // eslint-disable-next-line
     useEffect(() => {
+        // eslint-disable-next-line
         fetchAndSetStudent()
+        // eslint-disable-next-line
     }, [id])
 
     const handleChange = (e) => {
